@@ -35,6 +35,7 @@ e2e_nlp_final_proj_fall_2025/
 ├── setup.py                    # System setup script
 ├── test_system.py              # Testing script
 ├── requirements.txt            # Python dependencies
+├── environment.yaml            # Conda environment file
 ├── .env.example               # Environment variables template
 ├── README.md                  # This file
 ├── src/
@@ -66,8 +67,8 @@ e2e_nlp_final_proj_fall_2025/
 
 2. **Create and activate conda environment** :
    ```bash
-   conda create -n iep_rag python=3.10
-   conda activate iep_rag
+   conda env create -f environment.yaml
+   conda activate NLP
    ```
 
 3. **Install dependencies** :
