@@ -147,7 +147,7 @@ This will:
 
 ```bash
 # Complete setup workflow
-cd /Users/aadit/Dev/e2e_nlp_final_proj_fall_2025
+cd path/to/your/e2e_nlp_final_proj_fall_2025_AFK
 conda activate NLP
 cp .env.example .env
 # Edit .env to add your API key
