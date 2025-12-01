@@ -54,7 +54,7 @@ e2e_nlp_final_proj_fall_2025/
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.11 or higher
 - Conda (recommended) or pip
 - OpenAI API key (for using GPT models)
 

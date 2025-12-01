@@ -4,7 +4,7 @@ Follow these steps to get the IEP Goal Generator running on your system.
 
 ## Prerequisites
 
-- Python 3.8+ installed
+- Python 3.11+ installed
 - Conda environment created and activated with dependencies installed
 - OpenAI API key (get one from https://platform.openai.com/api-keys)
 
@@ -114,7 +114,7 @@ This will:
 - The `src/__init__.py` file should exist
 
 ### Import errors
-- Activate your conda environment: `conda activate iep_rag`
+- Activate your conda environment: `conda activate NLP`
 - Reinstall dependencies: `pip install -r requirements.txt`
 
 ### Slow generation
@@ -148,7 +148,7 @@ This will:
 ```bash
 # Complete setup workflow
 cd /Users/aadit/Dev/e2e_nlp_final_proj_fall_2025
-conda activate iep_rag
+conda activate NLP
 cp .env.example .env
 # Edit .env to add your API key
 python setup.py
