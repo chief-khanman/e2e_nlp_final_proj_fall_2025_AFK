@@ -1,0 +1,117 @@
+Project Overview
+In this culminating project, you will apply the knowledge and skills gained throughout this course to develop a Retrieval-Augmented Generation (RAG) system for special education professionals. Your system will assist in creating Individualized Education Program (IEP) goals for students with disabilities that align with industry standards and educational frameworks.
+
+The system will take student information (including assessment results, interests, and needs) as input and generate appropriate measurable postsecondary goals and short-term objectives that are aligned with both industry standards and state educational content standards.
+
+Learning Objectives
+This project addresses the following course learning objectives:
+
+
+Project Requirements
+1. Data Collection and Preprocessing (10 points)
+Collect and preprocess relevant documents including:
+Occupational Outlook Handbook from the Bureau of Labor Statistics (https://www.bls.gov/ooh/)
+State educational standards for employment skills (e.g., 21st Century Skills)
+Sample IEP goals and transition planning documentation
+Implement effective text extraction and chunking strategies
+Create and store appropriate embeddings for efficient retrieval
+2. RAG Pipeline Implementation (20 points)
+Develop a retrieval component that can effectively find relevant information from:
+Career requirements and standards from the Occupational Outlook Handbook
+Educational standards that align with a student's career interests
+Best practices for IEP goal development
+Implement a generation component that:
+Creates well-formed, measurable postsecondary goals
+Develops aligned short-term objectives/benchmarks
+Ensures compliance with IDEA 2004 requirements for transition planning
+3. Prompt Engineering (10 points)
+Create effective prompts that:
+Extract relevant information from student profiles
+Guide the model to generate appropriately structured goals
+Ensure alignment between postsecondary goals, industry standards, and educational standards
+Include appropriate instructions for handling missing information or ambiguous cases
+4. User Interface (5 points)
+Build a simple interface using Streamlit or Gradio that:
+Allows users to input student information (age, grade, interests, assessment results)
+Displays generated IEP goals and objectives
+Shows the alignment between goals and relevant standards
+Provides explanations of how the goals connect to the student's interests and needs
+5. Documentation and Analysis (5 points)
+Document your approach, including:
+Data collection and preprocessing methods
+Embedding and retrieval strategies
+Prompt engineering decisions
+Evaluation of system performance
+Analyze strengths and limitations of your approach
+Suggest potential improvements
+Sample Data
+Below is a case study similar to what your system should be able to process:
+
+Case Study: Clarence
+
+Student Information:
+
+15-year-old sophomore with a behavior disorder
+Completed the O*Net Interest Profiler assessment
+Shows strong interest in the "Enterprising" category
+Career interests: retail sales, driver/sales worker
+Prefers hands-on learning over academic instruction
+Assessment Results:
+
+O*Net Interest Profiler indicates strength in Enterprising activities
+Career suggestions include retail salesperson or driver/sales worker
+Student interview ("Vision for the Future") indicates interest in working at Walmart
+Expected Output:
+
+Measurable postsecondary goals:
+
+Employment: "After high school, Clarence will obtain a full-time job at Walmart as a sales associate."
+Education/Training: "After high school, Clarence will complete on-the-job training provided by Walmart and participate in employer-sponsored customer service workshops."
+Measurable annual goal aligned with standards:
+
+"In 36 weeks, Clarence will demonstrate effective workplace communication and customer service skills in role-play and community-based instruction settings by appropriately greeting customers, maintaining eye contact, listening actively, and responding to customer questions in 4 out of 5 observed opportunities."
+Alignment to standards:
+
+Occupational Outlook Handbook standards for Retail Sales Workers
+State 21st Century Skills standards
+Short-term objectives/benchmarks that support the annual goal
+
+Implementation Guidelines
+Data Sources:
+
+Download and process the Occupational Outlook Handbook
+Collect state educational standards (you may choose any state's standards)
+Gather sample IEP goals and transition planning documents
+Organize data into appropriate categories for retrieval
+RAG Pipeline:
+
+Use a vector database (FAISS, Chroma, etc.) for efficient retrieval
+Implement an embedding model (SentenceTransformers, OpenAI Embeddings, etc.)
+Develop a retrieval strategy that finds the most relevant information
+Create prompts that effectively utilize retrieved information
+Interface:
+
+Build a user-friendly interface that collects student information
+Display generated goals, objectives, and alignments
+Include explanations of how the goals connect to standards
+Testing:
+
+Test your system with the sample student profile
+Evaluate the quality and relevance of the generated goals
+Assess alignment with standards and student needs
+Deliverables
+Code Repository:
+
+Complete source code with documentation
+Requirements file listing all dependencies
+README with setup and usage instructions
+Documentation of your results and challenges (could be just a report or a simple 2 mins video as well)
+Evaluation Criteria
+Functionality (40%): Does the system work as expected? Can it generate appropriate goals based on student information?
+Technical Implementation (30%): Quality of code, effectiveness of RAG implementation, and prompt engineering
+Documentation (30%): Completeness and clarity of documentation
+Resources
+Occupational Outlook Handbook: https://www.bls.gov/ooh Links to an external site.
+State Educational Standards: https://educate.iowa.gov/media/2762/download?inline= Links to an external site.
+IDEA Transition Requirements: https://sites.ed.gov/idea/regs/b/d/300.320/b Links to an external site.
+LangChain Documentation: https://python.langchain.com/docs/get_started/introduction Links to an external site.
