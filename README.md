@@ -62,7 +62,7 @@ e2e_nlp_final_proj_fall_2025/
 
 1. **Clone or navigate to the project directory**:
    ```bash
-   cd /Users/aadit/Dev/e2e_nlp_final_proj_fall_2025
+   cd path/to/your/e2e_nlp_final_proj_fall_2025
    ```
 
 2. **Create and activate conda environment** :
