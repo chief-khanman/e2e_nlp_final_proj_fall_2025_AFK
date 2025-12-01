@@ -29,7 +29,7 @@ This system uses advanced AI and retrieval techniques to generate high-quality I
 ## Project Structure
 
 ```
-e2e_nlp_final_proj_fall_2025/
+e2e_nlp_final_proj_fall_2025_AFK/
 ├── app.py                      # Streamlit web application
 ├── config.py                   # Configuration settings
 ├── setup.py                    # System setup script
